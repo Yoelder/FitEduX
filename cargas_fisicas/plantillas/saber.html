@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<body>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white text-center py-4">
+        
+        <h2>Tabla con los indices de referencia para la evaluacion</h2>
+    </header>
+
+    <div class="container my-5">
+        <!-- Primera Tabla -->
+        <div class="mb-4">
+            <h2>Esfuerzo</h2>
+            <table class="table table-striped table-bordered">
+
+
+
+                <tbody>
+                    <thead class="table-dark">
+                    <tr>
+
+                        <td>Primera Etapa</td>
+                        <td>Calificacion</td>
+                        <td>Segunda Etapa</td>
+                        <td>Calificacion</td>
+                        <td>Tercera Etapa</td>
+                        <td>Calificacion</td>
+                        <td>Punto</td>
+                    </tr>
+                </thead>
+                    <tr>
+
+                        <td>Menos 64%</td>
+                        <td>Mal</td>
+                        <td>Menos 69%</td>
+                        <td>Mal</td>
+                        <td>Menos 74%</td>
+                        <td>Mal</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+
+                        <td>64%</td>
+                        <td>Regular</td>
+                        <td>69%</td>
+                        <td>Regular</td>
+                        <td>74%</td>
+                        <td>Regular</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+
+                        <td>65% 69%</td>
+                        <td>Bien</td>
+                        <td>70% 75%</td>
+                        <td>Bien</td>
+                        <td>75% 85%</td>
+                        <td>Bien</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+
+                        <td>70% 75%</td>
+                        <td>Muy Bien</td>
+                        <td>76% 85%</td>
+                        <td>Muy Bien</td>
+                        <td>86% 95%</td>
+                        <td>Muy Bien</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Segunda Tabla -->
+        <div class="mb-4">
+            <h2>Rendimiento</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        
+                        <td>Primera Etapa</td>
+                        <td>Calificacion</td>
+                        <td>Segunda Etapa</td>
+                        <td>Calificacion</td>
+                        <td>Tercera Etapa</td>
+                        <td>Calificacion</td>
+                        <td>Punto</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Menos 56%</td>
+                        <td>Mal</td>
+                        <td>Menos 64%</td>
+                        <td>Mal</td>
+                        <td>Menos 72%</td>
+                        <td>Mal</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>58%</td>
+                        <td>Regular</td>
+                        <td>66%</td>
+                        <td>Regular</td>
+                        <td>76%</td>
+                        <td>Regular</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>59% 61%</td>
+                        <td>Bien</td>
+                        <td>67% 69%</td>
+                        <td>Bien</td>
+                        <td>77% 79%</td>
+                        <td>Bien</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>62% 64%</td>
+                        <td>Muy Bien</td>
+                        <td>70% 72%</td>
+                        <td>Muy Bien</td>
+                        <td>80% 82%</td>
+                        <td>Muy Bien</td>
+                        <td>5</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+                <!-- Tercera Tabla -->
+                <div class="mb-4">
+                    <h2>Eficiencia</h2>
+                    <table class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                
+                                <td>Primera Etapa</td>
+                                <td>Calificacion</td>
+                                <td>Segunda Etapa</td>
+                                <td>Calificacion</td>
+                                <td>Tercera Etapa</td>
+                                <td>Calificacion</td>
+                                <td>Punto</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td>Mayor que 1%</td>
+                                <td>Mal</td>
+                                <td>Mayor que 1%</td>
+                                <td>Mal</td>
+                                <td>Mayor que 0%</td>
+                                <td>Mal</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>1,5%</td>
+                                <td>Muy Bien</td>
+                                <td>1%</td>
+                                <td>Muy Bien</td>
+                                <td>0,1%</td>
+                                <td>Muy Bien</td>
+                                <td>5</td>
+                            </tr>
+                       
+        
+                        </tbody>
+                    </table>
+                </div>
+                        <!-- Cuarta Tabla -->
+        <div class="mb-4">
+            <h2>Adaptación</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        
+                        <td>Todas las Etapas</td>
+                        <td>Calificacion</td>
+                        <td>Puntos</td>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Mayor 40 pulsaciones</td>
+                        <td>Mal</td>
+                        <td>2</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>40 a 30 pulsaciones</td>
+                        <td>Regular</td>
+                        <td>3</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>29 a 19 pulsaciones</td>
+                        <td>Bien</td>
+                        <td>4</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>9 a 1o pulsaciones</td>
+                        <td>Exelente</td>
+                        <td>5</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+{% endblock %}

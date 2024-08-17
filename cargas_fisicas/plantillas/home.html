@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<!-- Contenido principal -->
+{% block title %} {{Home}} {% endblock %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var footer = document.querySelector('.footer');
+    var content = document.querySelector('section.container');
+    var footerHeight = footer.offsetHeight;
+    content.style.marginBottom = footerHeight + 'px';
+  });
+</script>
+<section class="container">
+  <h2>Bienvenido por donde quieres comenzar</h2>
+  <p>"¡Bienvenido a nuestra plataforma de evaluación física para estudiantes! Aquí, nos comprometemos a ayudarte a descubrir y potenciar tus capacidades físicas para un futuro más saludable y activo. Juntos, construiremos el camino hacia tu mejor versión</p>
+  <p></p>
+</section>
+<section class="container mt-5">
+  <h2>Breve descripcion y enlaces Importantes </h2>
+  <div class="row pd-10">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'registrar.jpeg' %}" class="card-img-top" alt="Imagen de entrenamiento">
+        <div class="card-body">
+          <h5 class="card-title">Registro y evaluacion</h5>
+          <p class="card-text">Registro de Nuevos alumnos para su evaluacion y desempeño en la actividad fisica .</p>
+          <a href="/formulario/" class="btn btn-primary">Registro y evaluacion</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'indicadores .jpeg' %}" class="card-img-top" alt="Imagen de alimentación saludable">
+        <div class="card-body">
+          <h5 class="card-title">Indicadores de evaluacion</h5>
+          <p class="card-text">Explicacion de indicadores y bases para evaluar el rendimiento e indicadores medidos.</p>
+          <a href="/saberes/" class="btn btn-primary">Saberes</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="{% static 'historial.jpg' %}" class="card-img-top" alt="Imagen de contacto">
+        <div class="card-body">
+          <h5 class="card-title">Historial de registro y Estadisticas</h5>
+          <p class="card-text"> Permite buscar  estadisticas de entrenamiento y condicion física.</p>
+          <a href="#" class="btn btn-primary">Estadisticas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
